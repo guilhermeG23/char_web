@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+* Criando: bandetoban - Guilherme R.B
+* Objetivo: Ganhar nota na APS - E Fazer um chat
+* Versão: Rider 0.0.3
+-->
+<html lang="pt-br">
+    <head>
+        <title>Socket.IO - chat</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+        <link rel="shortcut icon" href="../img/chat.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/boot.css">
+        <link rel="stylesheet" href="../css/cssPessoal.css">
+        <script type="text/javascript" src="../js/socket.js"></script>
+        <script type="text/javascript" src="../js/jquery.js"></script> 
+    </head>
+    <body>
+        <div class="abaixar-container">
+            <div class="container">
+                <div class="card">
+                    <h5 class="card-header centralizar">Entrar - Socket Chat</h5>
+                    <div class="card-body">
+                        <form action="../html/chat.html" method="GET">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="text" class="form-control" name="usuario" value=""  placeholder="Entre com o usuário" autocomplete="off" autofocus required>
+                                </li>
+                                <li class="list-group-item">
+                                    <button type="submit"  class="form-control btn btn-success">Entrar</button>
+                                </li>    
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
