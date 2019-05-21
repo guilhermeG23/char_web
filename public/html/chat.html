@@ -32,9 +32,10 @@
     <body onload="bemvindo(usuario);">
 
         <nav class="navbar navbar-light bg-light menu">
-            <span class="navbar-brand mb-0 h1">Chat - Socket.IO</span>
+            <span class="navbar-brand mb-0 h1">Chat - Socket.IO - 
+                <button type="button" data-toggle="modal" data-target="#ajuda-modal" class="duvida">?</button>
+            </span>
         </nav>
-  
         <div id="caixa">
             <ul id="messages" class="list-group">
                 <div class="caixa-botoes">
@@ -61,9 +62,57 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Modal para mostrar de ajuda -->
+                <div class="modal fade" id="ajuda-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">Ajuda</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="ajuda-tabela">
+                                    <tr>
+                                        <th colspan="2">Comandos para ativar os Emojis!</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/sorriso.png"></th>
+                                        <th>Digite: sorriso</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/merda.png"></th>
+                                        <th>Digite: merda</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/joia.png"></th>
+                                        <th>Digite: joia</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/gato.png"></th>
+                                        <th>Digite: gato</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/raiva.png"></th>
+                                        <th>Digite: raiva</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/fudeu.png"></th>
+                                        <th>Digite: fudeu</th>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../img/anime.png"></th>
+                                        <th>Digite: anime</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
+        <!--Mensagens-->
         <form id="form-mensagens" action="">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Chat text..." aria-label="Recipient's username" aria-describedby="button-addon2" id="m" autocomplete="off" autofocus required>

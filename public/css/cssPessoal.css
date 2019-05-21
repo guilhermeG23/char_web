@@ -65,6 +65,16 @@ body {
 .navbar-brand {
     margin: auto;
 }
+/*Duvida*/
+.duvida {
+    border: 0px;
+    background: transparent !important;
+    color: red;
+}
+/*Ajuda*/
+.ajuda-tabela th {
+    padding: 10px;
+}
 
 /*Espacamento da caixa*/
 #caixa {
