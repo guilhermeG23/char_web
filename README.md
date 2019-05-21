@@ -12,6 +12,12 @@
 * npm install --save express
 * npm install --save socket.io
 
+Ou simplesmente faça isso:
+
+* npm install 
+
+Com isso ele procura o package interno para saber o que ele tem que instalar.
+
 # Após isso execute o index.js
 * node index.js
 
