@@ -32,9 +32,7 @@
     <body onload="bemvindo(usuario);">
 
         <nav class="navbar navbar-light bg-light menu">
-            <span class="navbar-brand mb-0 h1">Chat - Socket.IO - 
-                <button type="button" data-toggle="modal" data-target="#ajuda-modal" class="duvida">?</button>
-            </span>
+            <span class="navbar-brand mb-0 h1">Chat - Socket.IO</span>
         </nav>
         <div id="caixa">
             <ul id="messages" class="list-group">
@@ -117,6 +115,7 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Chat text..." aria-label="Recipient's username" aria-describedby="button-addon2" id="m" autocomplete="off" autofocus required>
                 <div class="input-group-append">
+                    <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#ajuda-modal" class="duvida">?</button>
                     <button class="btn btn-success" type="submit" id="button-addon2">Enviar</button>
                 </div>
               </div>
